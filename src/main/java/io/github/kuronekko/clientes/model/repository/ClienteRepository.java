@@ -1,4 +1,8 @@
 package io.github.kuronekko.clientes.model.repository;
 
-public class ClienteRepository {
+import io.github.kuronekko.clientes.model.entity.Cliente;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
+
 }
